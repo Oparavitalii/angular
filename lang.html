@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+      <table class="table" border="1px solid">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Lang</th>
+            <th>level</th>
+           
+        </tr>
+        </thead>
+        <tr ng-repeat="item in skills" > >
+           <td>{{$index+1}}</td>
+           <td>{{item.lang}}</td>
+           <td>{{item.level}}</td>
+        </tr>
+    </table>  
+</body>
+</html>
+  

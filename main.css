@@ -1,0 +1,56 @@
+  
+.red {background-color: red}
+.green {background-color: green}
+.blue {background-color: blue}
+
+  .firstRow{
+            background-color: #c9302c;
+        }
+        .otherRow{
+            background-color: transparent;
+        }
+        #showByIf{
+            width:200px;
+            height:200px;
+            background-color: #5bc0de;
+            float:left;
+            margin-right: 20px;
+        }
+        #showByShow{
+            width:200px;
+            height:200px;
+            background-color: #5cb85c;
+            float:left;
+            margin-right: 20px;
+        }
+        #showByHide{
+            width:200px;
+            height:200px;
+            background-color: crimson;
+            float:left;
+            margin-right: 20px;
+        }
+        .first {
+
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            border: 1px solid yellow;
+            background-color: green;
+        }
+          .first2 {
+
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            border: 1px solid yellow;
+            background-color: orange;
+        }
+          .first3 {
+
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            border: 1px solid yellow;
+            background-color: lightpink;
+        }

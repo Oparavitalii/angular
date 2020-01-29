@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="SampleApp">
+<head>
+    <meta charset="UTF-8">
+    <title>forAng</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="main.js"></script>
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<h3><b>#2</b></h3>
+<div ng-controller="SampleAppCtrl">
+    <span>Имя: {{items.name}};</span><span> Возраст: {{items.age}};</span>
+    горд: {{items.city}}
+    </div>
+    
+<h3 style="text-decoration: underline"><b>Task3,4</b></h3>
+<div ng-controller="tabCtrl">
+    <table class="table" border="1px solid">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Имя</th>
+            <th>Возраст</th>
+        </tr>
+        </thead>
+        <tr ng-repeat="item in list" ng-init="index=0; classes=['red', 'green', 'blue']" ng-click="classes=['green']" ng-class="classes[index % classes.length]"> >
+           <td>{{$index+1}}</td>
+           <td>{{item.name}}</td>
+           <td>{{item.age}}</td>
+        </tr>
+    </table>
+   
+</div>
+<h3 ><b>Task5</b></h3>
+<div ng-controller="skLang" >
+    <button ng-click="showSkills()">Skills</button>
+    <button ng-click="showLang()">Languages</button>
+    <div ng-include="url"></div>
+</div>
+
+
+
+<h3 style="text-decoration: underline"><b>Task6</b></h3>
+<div ng-controller="forTask5Ctrl">
+    <div  style="margin-bottom:20px">
+      <button ng-click="click1()">click1</button>
+      <button ng-click="click2()">click2</button>
+      <button ng-click="click3()">click3</button>
+
+      <div class="first" ng-if="first"></div>
+      <div class="first2" ng-if="first2"></div>
+      <div class="first3" ng-if="first3"></div>
+      
+</div>
+</body>
+</html>
